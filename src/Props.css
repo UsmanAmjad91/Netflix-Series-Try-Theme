@@ -60,7 +60,6 @@ transition: all 2s ease;
 .header{
     text-align: center;
     position: fixed;
-   
     background-size: cover;
     background-color: #000000;
     top: 0;
@@ -77,5 +76,7 @@ transition: all 2s ease;
 
 .btn{
     font-family: 'Bruno Ace SC', cursive;
-
+    cursor:pointer;
+    border: 1px solid red;
+    border-radius: 10%;
 }
