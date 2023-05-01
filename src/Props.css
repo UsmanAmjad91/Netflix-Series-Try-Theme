@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+
+*{margin: 0;padding: 0; box-sizing: border-box;}
+.cards{
+    /* height: 300px;
+    width: 250px; */
+    width: 100%;
+    margin-top: 10%;
+    /* display: flex;
+    justify-content: center;
+    display: inline-block; */
+
+}
+
+.card{
+    display: inline-block;
+    height: 300px;
+    width: 200px;
+    text-align: center;
+    border: 1px red solid;
+    background-color: rgb(255, 255, 255);
+    vertical-align:top;
+    float:left;
+    margin: 5%;
+    margin-left: 12%;
+    border-radius: 10%;
+}
+
+.card_image{
+height: 200px;
+width: 150px;
+margin-top: 5%;
+border-radius: 10%;
+transition: transform 2s;
+
+}
+.card:hover {
+ transform: scale(1.2);
+ -webkit-transition: all 2s ease;
+-moz-transition: all 2s ease;
+-ms-transition: all 2s ease;
+transition: all 2s ease;
+  }
+.card_info{
+
+}
+
+.card_category{
+    font-family: 'Dancing Script', cursive;
+}
+.card_title{
+    
+}
+.main-heading{
+    margin-top: 3%;
+    color: red;
+}
+.header{
+    text-align: center;
+    position: fixed;
+   
+    background-size: cover;
+    background-color: #000000;
+    top: 0;
+    height: 100vw;
+    width: 100vw;
+    z-index: -1;
+    overflow-x: hidden;
+    font-family: 'Bruno Ace SC', cursive;
+
+}
+.target_link{
+
+}
+
+.btn{
+    font-family: 'Bruno Ace SC', cursive;
+
+}
