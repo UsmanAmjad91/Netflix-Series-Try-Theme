@@ -3,6 +3,19 @@ import "./Props.css";
 import Card from "./Cards";
 import Sdata from "./Sdata";
 
+function netflixcart(val,indexnum,arr){
+      return(
+         <Card
+         key={val.id}
+        imgsrc={val.imgsrc}
+        title={val.title}
+        sname={val.sname}
+        btn={val.btn}
+        link={val.link}
+      />
+      );
+}
+
 function Props() {
   return (
     <>
@@ -11,7 +24,22 @@ function Props() {
           <h1 className="main-heading">Netflix Special Series</h1>
         </div>
       </header>
-      <Card
+      {/* Map First Method */}
+     { Sdata.map(netflixcart)}
+     {/* First B */}
+     { Sdata.map((val)=>
+       <Card
+       key={val.id}
+       imgsrc={val.imgsrc}
+       title={val.title}
+       sname={val.sname}
+       btn={val.btn}
+       link={val.link}
+     />
+     )}
+
+      {/* Second Method */}
+      {/* <Card
         imgsrc={Sdata[0].imgsrc}
         title={Sdata[0].title}
         sname={Sdata[0].sname}
@@ -52,8 +80,8 @@ function Props() {
        sname={Sdata[5].sname}
        btn={Sdata[5].btn}
        link={Sdata[5].link}
-      />
-
+      /> */}
+      {/* First Method */}
       {/* <Card imgsrc="/images/download.jpeg" title="A Netflix Orignal Series" sname="Lucifer" btn="Watch Now" link="https://www.netflix.com/pk/title/80057918" />
      <Card imgsrc="/images/FameGame.jpg" title="A Netflix Orignal Series" sname="Fame Game" btn="Watch Now" link="https://www.netflix.com/pk/title/81133092" />
      <Card imgsrc="/images/downloads.jpeg" title="A Netflix Orignal Series" sname="Series" btn="Watch Now" link="https://www.netflix.com/pk/" />
